@@ -1,11 +1,14 @@
 def multiplication(num1, num2):
     print("Multiplication of", num1, "and", num2, "is:", num1 * num2)
+
 def power(num1, num2):
     print(f"{num1} raised to {num2} :",num1 ** num2)
 
-def modulus(ans, num):
+def modulus(num1, num2):
     print(f"{num1} mod {num2} :",num1 % num2)
 
+def subtraction(num1,num2):
+    print("Subtraction of", num1, "and", num2, "is:", num1 - num2)
 
 print("""
 --------------Calculator Using Python--------------
@@ -24,31 +27,25 @@ print("""\nOperations:
       """)
 
 
-while(1):
-    op = int(input("Enter Number For Operation:"))
-    match(op):
-        case 1:
-            addition(num1,num2)   
-            break
+op = int(input("Enter Number For Operation:"))
+match(op):
+    case 1:
+        addition(num1,num2)
 
-        case 2:
-            subtraction(num1,num2)
-            break
+    case 2:
+        subtraction(num1,num2)
 
-        case 3:
-            multiplication(num1,num2)
-            break
+    case 3:
+        multiplication(num1,num2)
 
-        case 4:
-            division(num1,num2)
-            break
+    case 4:
+        division(num1,num2)
 
-        case 5:
-            modulus(num1,num2)
-            break
+    case 5:
+        power(num1,num2)
 
-        case 6:
-            power(num1,num2)
+    case 6:
+        modulus(num1,num2)
 
-        case _:
-            print("Enter Valid Number!")
+    case _:
+        print("Enter Valid Number!")
