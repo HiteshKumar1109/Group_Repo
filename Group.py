@@ -5,3 +5,6 @@ def division(a, b):
 
     print("True Division (/):", a / b)
     print("Floor Division (//):", a // b)
+print("Hi Hello")
+
+print("OK")
