@@ -1,3 +1,5 @@
+def multiplication(num1, num2):
+    print("Multiplication of", num1, "and", num2, "is:", num1 * num2)
 def power(num1, num2):
     print(f"{num1} raised to {num2} :",num1 ** num2)
 
