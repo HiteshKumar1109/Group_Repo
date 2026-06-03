@@ -1,18 +1,52 @@
-def sub_number():
-    number1= int(input("The first number is"))
-    number2= int(input("The second number is"))
-    answer= number1-number2
-    print(f"The answer is :" ,answer)
-def multiplication(ans, num):
-    ans = ans * num
-    return ans
-def division(a, b):
-    if b == 0:
-        print("Division by zero is not allowed.")
-        return
+def power(num1, num2):
+    print(f"{num1} raised to {num2} :",num1 ** num2)
 
-    print("True Division (/):", a / b)
-    print("Floor Division (//):", a // b)
-print("Hi Hello")
+def modulus(ans, num):
+    print(f"{num1} mod {num2} :",num1 % num2)
 
-print("OK")
+
+print("""
+--------------Calculator Using Python--------------
+    """)
+
+num1 = int(input("Enter Number 1:"))
+num2 = int(input("Enter Number 2:"))
+
+print("""\nOperations:
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division/Floor Division
+5) Power
+6) Modulus
+      """)
+
+
+while(1):
+    op = int(input("Enter Number For Operation:"))
+    match(op):
+        case 1:
+            addition(num1,num2)   
+            break
+
+        case 2:
+            subtraction(num1,num2)
+            break
+
+        case 3:
+            multiplication(num1,num2)
+            break
+
+        case 4:
+            division(num1,num2)
+            break
+
+        case 5:
+            modulus(num1,num2)
+            break
+
+        case 6:
+            power(num1,num2)
+
+        case _:
+            print("Enter Valid Number!")
