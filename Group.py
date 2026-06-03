@@ -1,3 +1,10 @@
+def division(num1, num2):
+    if num2 == 0:
+        print("Division by zero is not allowed.")
+        return
+
+    print(f"Simple Division results : {num1 / num2}.")
+    print(f"Floor Division equals : {num1 // num2}.")
 def multiplication(num1, num2):
     print("Multiplication of", num1, "and", num2, "is:", num1 * num2)
 def power(num1, num2):
