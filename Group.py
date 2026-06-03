@@ -1,3 +1,6 @@
+def multiplication(ans, num):
+    ans = ans * num
+    return ans
 def division(a, b):
     if b == 0:
         print("Division by zero is not allowed.")
